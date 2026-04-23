@@ -1,0 +1,17 @@
+*.ckpt
+*.bin
+*.pyc
+__pycache__/
+.git/
+*.png
+*.jpg
+output/
+venv/
+service.log
+*.bak*
+analysis.py
+check_*.py
+auto_dl.py
+build_cuda_ops.py
+test_*.py
+debug_*.py

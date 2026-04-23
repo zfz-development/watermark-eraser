@@ -1,0 +1,7 @@
+models/sd-inpainting/
+models/big-lama/
+models/mat/
+models/cache/
+output/
+*.ckpt
+*.bin

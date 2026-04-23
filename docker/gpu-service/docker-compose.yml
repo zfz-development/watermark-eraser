@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  watermark-service:
+    build: .
+    container_name: watermark-service
+    restart: unless-stopped
+    ports:
+      - "8900:8900"
+    volumes:
+      - ./output:/app/output
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - TRANSFORMERS_OFFLINE=1
+      - HF_HOME=/app/models/cache
