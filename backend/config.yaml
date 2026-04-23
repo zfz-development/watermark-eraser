@@ -1,0 +1,27 @@
+app:
+  name: "水印去除工具"
+  version: "1.0.0"
+  debug: true
+auth:
+  secret_key: "dev-secret-key"
+  token_expire_days: 7
+upload:
+  max_image_size: 31457280
+  max_video_size: 524288000
+  allowed_images: ["jpg", "jpeg", "png", "webp"]
+  allowed_videos: ["mp4", "mov", "avi"]
+  file_expire_hours: 24
+points:
+  register_bonus: 5
+  sign_in_reward: 1
+  sign_in_7_bonus: 3
+  sign_in_30_bonus: 10
+  invite_reward: 3
+  cost:
+    image_standard: 1
+    image_hd: 3
+    video_30s: 5
+    video_3min: 15
+    video_long: 30
+watermark:
+  active_engine: "placeholder"
